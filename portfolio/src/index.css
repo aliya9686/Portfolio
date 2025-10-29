@@ -1,0 +1,70 @@
+/* @import "Tailwindcss";
+@keyframes slideDown {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out forwards;
+} */
+
+
+@import "tailwindcss";
+
+/* 🔽 Your existing mobile slide-down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* 🌈 NEW: Smooth Animated Gradient Background */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #1e3a8a, #9333ea, #ec4899, #0f172a);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+
+/* 💫 Optional: glowing aura effect */
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
